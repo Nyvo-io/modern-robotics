@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "9cb9af048d5bb555",
+    "type": "split",
+    "children": [
+      {
+        "id": "235365ee9f55c148",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2ba845f95d42942",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/ch03/ch03-rigid-body-motions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ch03-rigid-body-motions"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4bd88ccca4d1dc2c",
+    "type": "split",
+    "children": [
+      {
+        "id": "48eb87892101790d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61c58062bb3fa1bd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "74ae10f40d15d81d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "fa40c20a2931f405",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6d9b6cf2d5e17228",
+    "type": "split",
+    "children": [
+      {
+        "id": "7631b8f1e62a7048",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f47691906e49ffe5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes/ch03/ch03-rigid-body-motions.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "1b11411abaedb248",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "notes/ch03/ch03-rigid-body-motions.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "7a9a15b54a1a0f6d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "f6e39e026716e8ab",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "c7abf9baa19abce8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notes/ch03/ch03-rigid-body-motions.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "e2ba845f95d42942",
+  "lastOpenFiles": [
+    "notes/ch02/ch02-configuration-space.md",
+    "notes/ch03/ch03-rigid-body-motions-qa.md",
+    "notes/ch03/ch03-rigid-body-motions.md",
+    "attachments/ch03/fig-3-1-point-coordinates.png",
+    "attachments/ch03",
+    "notes/ch03",
+    "attachments/ch02/Pasted image 20260902162330.png",
+    "attachments/ch02/Pasted image 20260902162257.png",
+    "attachments/ch02/fig-2-13-2-14-task-workspace-examples.png",
+    "attachments/ch02/fig-2-12-workspaces.png",
+    "attachments/ch02/fig-2-11-rolling-coin.png",
+    "attachments/ch02/fig-2-10-four-bar-angles.png",
+    "attachments/ch02/table-2-2-cspace-topologies.png",
+    "attachments/ch02/fig-2-9-topology-equivalence.png",
+    "notes/ch02/ch02-configuration-space-qa.md",
+    "attachments/ch02/fig-1-1b-stewart-gough-platform.png",
+    "AGENTS.md"
+  ]
+}
