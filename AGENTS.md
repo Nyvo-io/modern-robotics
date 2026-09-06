@@ -1,35 +1,27 @@
 # Modern Robotics Course Instructions
 
-This folder is a persistent, interactive textbook course for a beginner in robotics with prior reinforcement-learning experience. Treat the local textbook PDF as the primary source.
+This folder is a persistent textbook course. Use the local textbook PDF as the primary source.
 
-## Resume a Study Session
+## Entry point and local workflow
 
-Before responding to a request to continue or teach this course, read these files in order:
+Read learning_protocol.md and progress.md at the start of a new study session. Then read the current chapter portion of sources.md, the relevant subsection of the paired chapter note and QA, and required source pages/attachments. Locate sections by headings; expand only when dependencies require it. Reuse already-read unchanged context for ordinary follow-up answers; reread edit targets to preserve learner additions.
 
-1. `progress.md`
-2. `sources.md`
-3. `learning_protocol.md`
-4. The active chapter folder under `notes/`, including its chapter note and matching `-qa.md` file
-5. Relevant files under `attachments/chXX/`
+learning_protocol.md is the single source of truth for this course's teaching cadence, coverage checks and note rules. It resolves the general skills' differing unit sizes into coherent problems or derivations. progress.md alone owns the current live checkpoint. Historical QA summaries, audit reports and superseded drafts are not live progress.
 
-Do not restart from Chapter 1, repeat closed material, or skip the active subsection without the learner asking. The project-level learning route is maintained outside this course package; do not copy it into these files.
+## Required skills
 
-## Required Skills
+Use these together when available:
 
-When available, use all three skills together:
+- textbook-study-companion: sources, paired files, attachments and persistence.
+- course-study-tutor: source-grounded explanations and durable notes.
+- learn-anything: adaptive practice and evidence-based feedback.
 
-- `textbook-study-companion`: restore state; maintain progress, paired note/QA files, attachments, and subsection status.
-- `course-study-tutor`: keep claims source-grounded; explain terminology, figures, and formulas; write durable notes.
-- `learn-anything`: teach adaptively with one active-recall or application question at a time.
+If unavailable, disclose it and use the equivalent course protocol. Do not silently drop their functions. Do not modify global skills merely to tailor this book.
 
-If a named skill is unavailable, follow the equivalent workflow in `learning_protocol.md`; do not silently drop the behavior.
+## Course boundaries
 
-## Non-negotiable Records
+Maintain a concise source coverage list in sources.md for the active source scope, including unnumbered conditions and explanatory passages. Before advancing, check source content against actual notes and explicitly retain unfinished items. Explanation, source coverage and independent mastery are distinct.
 
-- **Before any question, explanation, or note edit, cross-check** `progress.md`, the relevant source-PDF pages, the active chapter note, and its QA file. Confirm the textbook sequence and verify that the current item's concepts, figures, formulas, and QA entry are complete before advancing.
-- `learning_protocol.md` is the single source of truth for the teaching loop and note rules.
-- Mark only the active subsection with `（进行中）`; remove it when finished and never add `（已完成）`.
-- Keep each chapter's note and QA record in the same `notes/chXX/` folder.
-- QA records contain only tutor prompts, follow-ups, reference answers, teaching intent, and next steps. Never store the learner's original answer unless they explicitly request it.
-- Store extracted textbook visuals in `attachments/chXX/`, with source attribution, and embed them by relative Markdown path.
-- For specialized terminology, write the Chinese term with its English equivalent on first use, e.g. 笛卡尔积（Cartesian product） and 构型空间（configuration space, C-space）；keep the terminology consistent afterward.
+Preserve paired chapter notes/QA and learner edits. Keep the active marker only on the current note subsection. Use Chinese with bilingual terminology on first introduction and LaTeX formulas. Follow learning_protocol.md for source figures, focused reading and incremental writes.
+
+Do not restart or rewrite old chapters unless asked. Do not import the project-level learning route into this course. Model choice remains with the user; daily work does not require automatic agent delegation.
