@@ -353,13 +353,14 @@ $$
 $$
 v=(v_x,v_y).
 $$
-这个v 是单位角速度所对应的线速度分量
+这个v 是==单位角速度==所对应的线速度分量
 
 将两者组合，得到螺旋轴（screw axis）
 
 $$
 S=(\omega,v_x,v_y).
 $$
+表示螺旋轴，不用实际角速度
 
 这里的 $v$ 不是固定旋转中心 $s$ 的速度；点 $s$ 的速度为零。
 
@@ -367,7 +368,7 @@ $v$ 指的是刚体 位于空间参考系 $\{s\}$ 原点的那个点，在该瞬
 
 角速度只告诉我们：
 
-> 刚体“转多快、绕哪个方向转”，方向是旋转轴方向，大小事转动快慢。
+> 刚体“转多快(未归一化时)、绕哪个方向转”，方向是旋转轴方向，大小事转动快慢。
 
 线速度 v 描述某个点此刻往哪个方向移动，有多快。他可以描述出绕哪里转
 
@@ -394,7 +395,7 @@ $$
 
 假如旋转中心是原点的话，那么就直接： $\dot q=\omega\times q$
 
-这里的x是叉乘，在二维里，因为旋转轴是z轴，所以sin也不用了，在二维里可以直接写的像乘法一样。但后面引入三维就会产生区别
+这里的x是==叉乘==，在二维里，因为旋转轴是z轴，所以sin也不用了，在二维里可以直接写的像乘法一样。但后面引入三维就会产生区别
 
 
 在二维平面中，把角速度写成三维形式：
@@ -504,9 +505,22 @@ $$\boxed{ x\text{ 方向平移} + y\text{ 方向平移} + \text{平面内旋转}
 这和二维刚体构型有 3个自由度是对应的，只不过$((x,y,\theta)$ 描述的是位置和朝向，这里描述它们变化得多快
 
 
+
+$$\boxed{\mathcal V=\mathcal S\,\dot\theta}$$
+
+- $\mathcal S$：只描述运动轴的几何信息，通常经过归一化；
+- $\dot\theta$：描述沿这根轴运动得多快；
+- $\mathcal V$：刚体当前的实际瞬时速度。
+
+$$ \mathcal S= \begin{bmatrix} \omega\\v \end{bmatrix}, \qquad \mathcal V= \begin{bmatrix} \omega_{\text{actual}}\\ v_{\text{actual}} \end{bmatrix} = \begin{bmatrix} \omega\\v \end{bmatrix}\dot\theta$$
+
+
+
 $(v,\omega)$ 描述了整个刚体的**瞬时速度场**
 
-你给我一个刚体上的任意点 \(q\)，我只需要知道：$(v,\omega)$
+==这里的 $(v,\omega)$ 是实际 twist，不是归一化后的螺旋轴==
+
+你给我一个刚体上的任意点 q ，我只需要知道：$(v,\omega)$
 
 就能算出它此刻的速度：
 
@@ -522,7 +536,7 @@ v=(2,0),
 S=(1,2,0).
 $$
 
-$S$ 描述的是单位角速度下的运动方向与轴的位置关系，而不是这次运动最终转过的总角度。
+$S$ 描述的是==单位角速度==下的运动方向与轴的位置关系，而不是这次运动最终转过的总角度。
 
 令 $x$ 是刚体上所研究的点，$s$ 是旋转中心；在 Figure 3.5 的例子中，所研究的 $x$ 取在 $\{s\}$ 原点。令
 
@@ -4414,6 +4428,98 @@ $$
 - $\log T=[S]\theta$ 从位姿恢复螺旋轴和运动量。
 
 
+三维位姿矩阵(齐次变换矩阵)：
+$$\boxed{ T= \begin{bmatrix} R&p\\ 0&1 \end{bmatrix}}$$
+三维螺旋轴向量：
+
+$$\boxed{ S= \begin{bmatrix} \omega\\v \end{bmatrix} = \begin{bmatrix} \omega_x\\ \omega_y\\ \omega_z\\ v_x\\ v_y\\ v_z \end{bmatrix}}$$
+
+其中：
+
+- $\omega$：旋转轴方向；
+- $v$：螺旋轴的线速度部分。
+
+
+三维螺旋轴的矩阵算子
+
+首先将 $\omega$ 变成反对称矩阵：
+
+$$[\omega]= \begin{bmatrix} 0&-\omega_z&\omega_y\\ \omega_z&0&-\omega_x\\ -\omega_y&\omega_x&0 \end{bmatrix}$$
+
+它满足
+
+$[\omega]q=\omega\times q$
+
+然后将 $\omega$ 和 $v$ 组合起来：
+
+$$\boxed{ [S]= \begin{bmatrix} [\omega]&v\\ 0&0 \end{bmatrix}}$$
+
+完全展开：
+
+$$\boxed{ [S]= \begin{bmatrix} 0&-\omega_z&\omega_y&v_x\\ \omega_z&0&-\omega_x&v_y\\ -\omega_y&\omega_x&0&v_z\\ 0&0&0&0 \end{bmatrix} \in\mathfrak{se}(3)}$$
+
+
+这个算子的作用：
+
+它可以表示刚体的瞬时速度场。
+
+设点 q 的齐次坐标为
+
+$\tilde q= \begin{bmatrix} q\\1 \end{bmatrix}$
+
+那么
+
+$$[S]\tilde q = \begin{bmatrix} [\omega]q+v\\ 0 \end{bmatrix} = \begin{bmatrix} \omega\times q+v\\ 0 \end{bmatrix}$$
+
+上面三个分量就是单位关节速度下该点的速度：
+
+$$\dot q=\omega\times q+v$$
+
+如果实际关节速度是 $\dot\theta$，则
+
+$$\boxed{ \dot q=(\omega\times q+v)\dot\theta }$$
+
+实际 twist 为 $\mathcal V=S\dot\theta$
+
+
+通过矩阵指数得到位姿:
+
+\[S] 本身不是齐次变换矩阵。它经过矩阵指数后，才会变成合法的位姿矩阵：
+
+$$\boxed{ e^{[S]\theta} = \begin{bmatrix} R(\theta)&p(\theta)\\ 0&1 \end{bmatrix} \in SE(3)}$$
+
+也就是说：
+
+$$\boxed{ \underbrace{ [S]= \begin{bmatrix} [\omega]&v\\ 0&0 \end{bmatrix}}_{\text{瞬时运动生成元}} \quad \xrightarrow{\text{矩阵指数}} \quad \underbrace{ e^{[S]\theta}= \begin{bmatrix} R&p\\ 0&1 \end{bmatrix}}_{\text{有限位姿}} }$$
+
+此时如果是旋转运动，$\|\omega\|=1$
+
+$$R(\theta)=e^{[\omega]\theta}$$
+
+并且
+
+$$p(\theta)=G(\theta)v$$
+
+其中
+
+$$G(\theta) = I\theta +(1-\cos\theta)[\omega] +(\theta-\sin\theta)[\omega]^2$$
+
+如果不是旋转，是移动关节
+
+$\omega=0$
+
+此时不能要求 $\|\omega\|=1$，而是要求移动方向 v 为单位向量：$\|v\|=1$
+
+螺旋轴为
+
+$$ S= \begin{bmatrix} 0\\v \end{bmatrix}$$
+
+指数结果是
+
+$$\boxed{ e^{[S]\theta} = \begin{bmatrix} I&v\theta\\ 0&1 \end{bmatrix}}$$
+
+这里的 $\theta$ 不再表示角度，而表示移动距离。
+
 
 ## 3.4 力旋量（Wrenches）
 
@@ -4422,6 +4528,25 @@ $$
 $$
 \boxed{m_a=r_a\times f_a.}
 $$
+
+意思是：一个力 $f_a$ 作用在距离参考系原点 $r_a$ 的位置，会产生让刚体绕原点旋转的趋势 $m_a$。
+
+其中：
+
+- $r_a$：从原点指向力的作用点的位置向量
+- $f_a$：作用力
+- $m_a$：这个力对原点产生的力矩
+- $\times$：向量叉乘
+
+力矩的大小为
+
+$$\|m_a\|=\|r_a\|\,\|f_a\|\sin\theta =\text{力}\times\text{垂直力臂}$$
+
+产生的力矩方向用右手定则确定。
+
+- 四指先指向 \(r\)；
+- 四指再向 f 弯曲，弯曲方向就是旋转方向；
+- 大拇指方向就是 m 的方向，他指出了轴的位置
 
 沿力的作用线移动作用点不会改变力矩。若 $r_a'=r_a+\lambda f_a$，则
 
@@ -4480,6 +4605,21 @@ $$
 $$
 V_a=[\operatorname{Ad}_{T_{ab}}]V_b.
 $$
+$\operatorname{Ad}_{T_{ab}}$
+
+> “刚体变换 $T_{ab}$ 对应的伴随矩阵”。
+
+普通的 $T_{ab}$ 是 $4\times4$ 矩阵，这里用于转换点的位置；
+
+$$T_{ab} = \begin{bmatrix} R_{ab}&p_{ab}\\ 0&1 \end{bmatrix}.$$
+
+- $R_{ab}$：把 b 系的方向转换到 a 系；
+- $p_{ab}$：坐标系 b 的原点在 a 系中的位置。
+
+而运动旋量 V 有六个分量，所以还要把它扩展成一个 $6\times6$ 矩阵：
+
+$$\operatorname{Ad}_{T_{ab}} = \begin{bmatrix} R_{ab}&0\\ [p_{ab}]_\times R_{ab}&R_{ab} \end{bmatrix}. $$
+
 
 代入功率不变式：
 
@@ -4514,6 +4654,9 @@ V_a=[\operatorname{Ad}_{T_{ab}}]V_b,
 \qquad
 F_b=[\operatorname{Ad}_{T_{ab}}]^TF_a.
 $$
+
+它描述同一个真实的力和力矩，换到另一个坐标系后应该怎样表示
+
 
 ### Proposition 3.27
 
@@ -4555,9 +4698,17 @@ f_b=R_{ab}^Tf_a,
 m_b=R_{ab}^T\bigl(m_a-p_{ab}\times f_a\bigr).}
 $$
 
-力只需要旋转坐标；力矩还要修正参考系原点改变所造成的力臂变化。
+力fb 只需要旋转坐标；力矩mb 还要修正参考系原点改变所造成的力臂变化，它与“相对于哪个原点计算”有关。
 
 固定空间参考系中的表示称为空间力旋量（spatial wrench）$F_s$，物体参考系中的表示称为物体力旋量（body wrench）$F_b$。
+
+建立一条统一规则：
+
+$$\boxed{ \text{换坐标系时，运动旋量用伴随矩阵变换； 力旋量用与之配对的转置变换。} }$$
+
+空间力旋量  和物体力旋量  不是两种不同的力，而是**同一个物理作用分别用世界坐标系和物体坐标系表示**。
+
+
 
 ### Example 3.28：力传感器、机械手与苹果
 
@@ -4670,6 +4821,7 @@ F_b=[\operatorname{Ad}_{T_{ab}}]^TF_a.}
 $$
 
 旋量是运动学量，力旋量是与它功率配对的动力学量；伴随矩阵作用于旋量，而其转置作用于力旋量，从而保证功率与参考系选择无关。
+
 
 ## 3.5 总结：旋转与刚体运动的平行结构
 

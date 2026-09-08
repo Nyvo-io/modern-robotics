@@ -8,6 +8,8 @@ Read learning_protocol.md and progress.md at the start of a new study session. T
 
 learning_protocol.md is the single source of truth for this course's teaching cadence, coverage checks and note rules. It resolves the general skills' differing unit sizes into coherent problems or derivations. progress.md alone owns the current live checkpoint. Historical QA summaries, audit reports and superseded drafts are not live progress.
 
+A request to read this file and continue studying is sufficient to activate this workflow, including the three skills below and the protocol's teaching, note-formatting and review rules. Do not require the learner to repeat them in a startup prompt. Before teaching, briefly state the resumed checkpoint and this turn's single learning target; apply the protocol's stopping boundary even when more source pages have been read.
+
 ## Required skills
 
 Use these together when available:

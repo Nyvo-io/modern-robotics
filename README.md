@@ -12,3 +12,11 @@
 - `AGENTS.md`：供新 Codex agent 恢复课程的入口说明。
 - `progress.md`：当前学习位置、已讲内容与下一步。
 - `learning_protocol.md`：唯一的教学流程、笔记与状态规范。
+
+## 新会话启动
+
+只需发送：
+
+> 继续学习 Modern Robotics。请先读取 `/Users/nyvo/book-learning/Modern Robotics/AGENTS.md`，按其中指引从当前断点继续。
+
+需要切换章节时补充目标章节即可。技能使用、教学节奏、来源核对与排版整理由入口文件和正式协议负责，无需在每次启动时重复整套要求。
