@@ -3,8 +3,8 @@
 # Modern Robotics 学习笔记
 
 <p align="center">
-  <a href="README_EN.md">English</a> |
-  <strong>中文</strong>
+  <a href="README_EN.md"><img src="https://img.shields.io/badge/English-README_EN-2ea44f?style=for-the-badge" alt="Read in English"></a>
+  <img src="https://img.shields.io/badge/中文-当前页面-0969da?style=for-the-badge" alt="当前为中文页面">
 </p>
 
 围绕 Kevin M. Lynch 与 Frank C. Park 的 *Modern Robotics: Mechanics, Planning, and Control* 整理的中文学习笔记。按教材章节保存概念解释、公式推导、配图与 Q&A，让阅读、练习和复习有迹可循。

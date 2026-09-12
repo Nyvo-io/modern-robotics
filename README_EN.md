@@ -3,8 +3,8 @@
 # Modern Robotics Study Notes
 
 <p align="center">
-  <strong>English</strong> |
-  <a href="README.md">中文</a>
+  <img src="https://img.shields.io/badge/English-current-0969da?style=for-the-badge" alt="Current page is English">
+  <a href="README.md"><img src="https://img.shields.io/badge/中文-README-2ea44f?style=for-the-badge" alt="阅读中文版"></a>
 </p>
 
 Chinese study notes for Kevin M. Lynch and Frank C. Park's *Modern Robotics: Mechanics, Planning, and Control*. The repository follows the textbook chapter by chapter, combining concept explanations, derivations, figures, and self-check questions in one place.
