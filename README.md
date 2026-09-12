@@ -1,16 +1,27 @@
 ![Modern Robotics — Mechanics, Planning, and Control 学习笔记](assets/cover.svg)
 
-# Modern Robotics 学习笔记
+# Modern Robotics 学习笔记 / Study Notes
 
-**从构型与坐标系出发，逐步理解机器人的运动、规划与控制。**
+<p align="center">
+  <a href="#english">English</a> |
+  <a href="#中文">中文</a>
+</p>
 
-围绕 Kevin M. Lynch 与 Frank C. Park 的 *Modern Robotics: Mechanics, Planning, and Control* 整理的中文学习笔记。按教材章节保存概念解释、公式推导、配图与 Q&A，让阅读、练习和复习有迹可循。
+<a id="english"></a>
 
-## Modern Robotics Study Notes
+## English
 
 Chinese study notes for Kevin M. Lynch and Frank C. Park's *Modern Robotics: Mechanics, Planning, and Control*. The repository follows the textbook chapter by chapter, combining concept explanations, derivations, figures, and self-check questions in one place.
 
 The detailed notes are written primarily in Chinese, with English chapter names and key terms included for cross-language reference. Each completed chapter has a paired note and Q&A file so that reading and retrieval practice stay connected.
+
+**[Chapter Index](#章节索引--chapter-index)** · **[Textbook PDF](books/modern-robotics.pdf)** · **[Progress](progress.md)** · **[Sources](sources.md)**
+
+<a id="中文"></a>
+
+## 中文
+
+围绕 Kevin M. Lynch 与 Frank C. Park 的 *Modern Robotics: Mechanics, Planning, and Control* 整理的中文学习笔记。按教材章节保存概念解释、公式推导、配图与 Q&A，让阅读、练习和复习有迹可循。
 
 **[章节索引 / Chapter Index](#章节索引--chapter-index)** · **[教材 PDF / Textbook PDF](books/modern-robotics.pdf)** · **[学习进度 / Progress](progress.md)** · **[来源与页码 / Sources](sources.md)**
 
