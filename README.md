@@ -3,9 +3,11 @@
 # Modern Robotics 学习笔记
 
 <p align="center">
-  <a href="README_EN.md">English</a> |
+  <a href="#english">English</a> |
   <strong>中文</strong>
 </p>
+
+<a id="chinese"></a>
 
 围绕 Kevin M. Lynch 与 Frank C. Park 的 *Modern Robotics: Mechanics, Planning, and Control* 整理的中文学习笔记。按教材章节保存概念解释、公式推导、配图与 Q&A，让阅读、练习和复习有迹可循。
 
@@ -96,3 +98,55 @@ modern-robotics/
 教学节奏、来源核对与状态维护见 [学习协议](learning_protocol.md)。项目层面的路线规划与章节取舍由独立的路线规划对话维护。
 
 </details>
+
+---
+
+<a id="english"></a>
+
+## English
+
+<p align="center">
+  <strong>English</strong> |
+  <a href="#chinese">中文</a>
+</p>
+
+Chinese study notes for Kevin M. Lynch and Frank C. Park's *Modern Robotics: Mechanics, Planning, and Control*. The repository follows the textbook chapter by chapter, combining concept explanations, derivations, figures, and self-check questions in one place.
+
+The detailed notes are written primarily in Chinese, with English chapter names and key terms included for cross-language reference. Each completed chapter has a paired note and Q&A file so that reading and retrieval practice stay connected.
+
+**[Chapter Index](#english-chapter-index)** · **[Textbook PDF](books/modern-robotics.pdf)** · **[Progress](progress.md)** · **[Sources](sources.md)**
+
+<a id="english-chapter-index"></a>
+
+### Chapter Index
+
+Each chapter keeps a main note and a companion Q&A. Read the note for a continuous explanation, then use the Q&A for retrieval practice and review.
+
+| Chapter | Topics | Notes | Practice |
+| :--- | :--- | :--- | :--- |
+| **02 · Configuration Space** | Degrees of freedom, joint constraints, topology, task and workspace | [Chapter note](notes/ch02/ch02-configuration-space.md) | [Q&A](notes/ch02/ch02-configuration-space-qa.md) |
+| **03 · Rigid-Body Motions** | Rotations, homogeneous transformations, screw theory, exponentials and logarithms, wrenches | [Chapter note](notes/ch03/ch03-rigid-body-motions.md) | [Q&A](notes/ch03/ch03-rigid-body-motions-qa.md) |
+| **04 · Forward Kinematics** | Space and body PoE, robot modeling, and URDF | [Chapter note](notes/ch04/ch04-forward-kinematics.md) | [Q&A](notes/ch04/ch04-forward-kinematics-qa.md) |
+
+> [!NOTE]
+> This table lists chapters with notes already available. The current section, pending exercises, and next action are tracked in [Progress](progress.md). Coverage and independent mastery are recorded separately.
+
+## How to Use This Repository
+
+1. **Read the chapter note first.** Follow the section links from the chapter index and move from problems to concepts, derivations, and examples.
+2. **Practice with the paired Q&A.** Answer each question before opening the reference answer, and distinguish recognition from independent recall.
+3. **Return to the textbook when needed.** Figure numbers, equation numbers, and page references point back to the local PDF; see the [source index](sources.md) for version details.
+
+The notes use Markdown and LaTeX with relative links between chapters, Q&A files, and figures. They can be read directly on GitHub or opened as an Obsidian vault.
+
+## Textbook and Resources
+
+| Resource | Use |
+| :--- | :--- |
+| [Textbook PDF in this repository](books/modern-robotics.pdf) | The May 3, 2017 preprint used for these notes; 644 PDF pages |
+| [Official book page](https://hades.mech.northwestern.edu/index.php/Modern_Robotics) | Preprint, errata, and companion materials from the authors |
+| [Official video lectures](https://modernrobotics.northwestern.edu/nu-gm-book-resource/) | Chapter-by-chapter explanations and examples |
+
+Page references use the PDF stored in this repository. Recheck page numbers when changing textbook versions. Copyright for the textbook and reproduced figures remains with the authors and respective rights holders; this repository is a personal study record.
+
+<p align="right"><a href="#chinese">Back to 中文</a></p>
