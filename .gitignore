@@ -1,2 +1,11 @@
 .DS_Store
 **/.DS_Store
+
+# Local editor state
+.obsidian/
+.vscode/
+
+# Temporary exports and caches
+__pycache__/
+.ipynb_checkpoints/
+*.tmp

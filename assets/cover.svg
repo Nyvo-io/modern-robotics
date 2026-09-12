@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">Modern Robotics — A Learning Notebook</title>
+  <desc id="desc">An ivory bookplate with a green articulated robot arm, coordinate frames, and an orange end-effector trajectory.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#deded1" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0 0L6 3L0 6" fill="none" stroke="#788678" stroke-width="1.2"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="420" rx="12" fill="#f5f1e8"/>
+  <rect width="12" height="420" rx="6" fill="#294e43"/>
+  <rect x="720" y="28" width="528" height="364" rx="8" fill="url(#grid)"/>
+  <path d="M680 44V376" stroke="#d6d0c2"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="58" y="67" font-size="15" letter-spacing="4" fill="#52665b">A LEARNING NOTEBOOK</text>
+    <text x="58" y="163" font-family="Georgia, 'Times New Roman', serif" font-size="84" fill="#203d34">Modern</text>
+    <text x="58" y="247" font-family="Georgia, 'Times New Roman', serif" font-size="84" fill="#203d34">Robotics</text>
+    <text x="61" y="295" font-size="20" fill="#52665b">Mechanics, Planning, and Control</text>
+    <path d="M61 325H602" stroke="#d6d0c2"/>
+    <text x="61" y="361" font-size="15" fill="#69736a">LYNCH &amp; PARK</text>
+    <text x="602" y="361" text-anchor="end" font-size="13" letter-spacing="2" fill="#69736a">NOTES / DERIVATIONS / Q&amp;A</text>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M785 334H1186" stroke="#aab2a3" stroke-width="2"/>
+    <path d="M842 326V238L969 122L1092 192" stroke="#d2d8c9" stroke-width="28"/>
+    <path d="M842 326V238L969 122L1092 192" stroke="#294e43" stroke-width="8"/>
+    <path d="M1092 192L1123 210M1125 194L1110 222M1125 194L1144 205M1110 222L1129 233" stroke="#294e43" stroke-width="5"/>
+    <path d="M810 330L819 305H865L874 330" stroke="#294e43" stroke-width="5"/>
+    <path d="M1087 113C1183 105 1232 170 1181 257" stroke="#c8794f" stroke-width="2.5" stroke-dasharray="5 8"/>
+    <path d="M842 238V173M842 238H909" stroke="#788678" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <path d="M1092 192L1087 136M1092 192L1143 168" stroke="#788678" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <path d="M874 209A43 43 0 0 0 842 195" stroke="#c8794f" stroke-width="2"/>
+  </g>
+  <g fill="#f5f1e8" stroke="#294e43" stroke-width="4">
+    <circle cx="842" cy="238" r="13"/>
+    <circle cx="969" cy="122" r="13"/>
+    <circle cx="1092" cy="192" r="10"/>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="21" fill="#52665b">
+    <text x="811" y="168">{s}</text>
+    <text x="1065" y="123">{b}</text>
+    <text x="878" y="197" fill="#b66740">θ</text>
+  </g>
+  <text x="984" y="374" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3" fill="#69736a">GEOMETRY → MOTION → CONTROL</text>
+</svg>

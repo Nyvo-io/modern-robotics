@@ -1,6 +1,30 @@
 # Modern Robotics 第 2 章：构型空间（Configuration Space）
 
-来源：本地教材 PDF，第 11 页起（PDF 第 34 页起）。
+[← 阅读首页](../../README.md) · [配套 Q&A](ch02-configuration-space-qa.md) · [学习进度](../../progress.md) · [来源索引](../../sources.md)
+
+<details>
+<summary><strong>本章目录</strong></summary>
+
+- [本章路线图](#本章路线图)
+- [2.1 刚体的自由度](#21-刚体的自由度)
+- [2.2 机器人的自由度](#22-机器人的自由度)
+  - [2.2.1 机器人关节](#221-机器人关节)
+  - [2.2.2 Grübler 公式](#222-grübler-公式)
+- [2.3 构型空间：拓扑与表示](#23-构型空间拓扑与表示)
+  - [2.3.1 构型空间的拓扑](#231-构型空间的拓扑)
+  - [2.3.2 构型空间的表示（configuration space representation）](#232-构型空间的表示configuration-space-representation)
+- [2.4 构型与速度约束（configuration and velocity constraints）](#24-构型与速度约束configuration-and-velocity-constraints)
+  - [2.4.1 平面四杆的闭环方程](#241-平面四杆的闭环方程)
+  - [2.4.2 约束方程与速度约束](#242-约束方程与速度约束)
+  - [2.4.3 非完整约束：无侧滑滚动的硬币](#243-非完整约束无侧滑滚动的硬币)
+- [2.5 任务空间与工作空间（task space and workspace）](#25-任务空间与工作空间task-space-and-workspace)
+  - [2.5.1 SCARA 机器人（图 2.13）](#251-scara-机器人图-213)
+  - [2.5.2 喷涂机器人（图 2.14）](#252-喷涂机器人图-214)
+- [2.6 总结](#26-总结)
+
+</details>
+
+来源：[教材 PDF](../../books/modern-robotics.pdf) · 2017 年 5 月预印本 · 书页 11 起／PDF 第 30 页起。
 
 ## 本章路线图
 
@@ -450,7 +474,7 @@ $(\theta_1,\theta_2)=\left(\frac{\pi}{2},\pi\right)$
 既可以左右滑，也可以旋转的旋钮
 他有两个自由度
 
-想象成：一个圆沿着 \(x\) 方向无限延伸。
+想象成：一个圆沿着 $x$ 方向无限延伸。
 所以成为了圆柱
 
 上图：它们全部都是 2 自由度系统，但它们的构型空间完全不一样
@@ -575,7 +599,7 @@ $$
 
 于是原来的位置约束其实变成：$g(\theta(t))=0$
 
-机器人无论运动到什么时候，都必须保持闭环，所以对于任意 \(t\)，都满足：$g(\theta(t))=0$，所以可以两边都对时间求导，采用链式法则：
+机器人无论运动到什么时候，都必须保持闭环，所以对于任意 $t$，都满足：$g(\theta(t))=0$，所以可以两边都对时间求导，采用链式法则：
 
 如果只有一个变量，比如：$g(\theta(t)$
 
@@ -641,7 +665,7 @@ $\mathcal X=\mathbb R^2$
 
 但这个机械臂并不是二维平面上的所有点都能碰到。
 
-它只能碰到某个有限区域，比如两根杆长度分别是 \(l_1,l_2\)，那么末端能到达的区域大致满足：
+它只能碰到某个有限区域，比如两根杆长度分别是 $l_1,l_2$，那么末端能到达的区域大致满足：
 
 $|l_1-l_2|\leq \sqrt{x_e^2+y_e^2}\leq l_1+l_2$
 
@@ -692,3 +716,7 @@ $$
 - C-space 可用显式参数化（explicit parametrization）或隐式表示（implicit representation）；闭链常用闭环方程表示。
 - 完整约束（holonomic constraint）限制可行构型，求导后得到可积的 Pfaffian 速度约束；非完整约束（nonholonomic constraint）限制瞬时速度，但不必降低可达 C-space 的维数。
 - 任务空间（task space）由任务需求决定，工作空间（workspace）由机器人结构和可达性决定；二者都只关注末端，不等同于完整 C-space。
+
+---
+
+[返回顶部](#modern-robotics-第-2-章构型空间configuration-space) · [阅读首页](../../README.md) · [第 3 章 →](../ch03/ch03-rigid-body-motions.md)

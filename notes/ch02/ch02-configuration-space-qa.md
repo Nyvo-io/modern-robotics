@@ -1,8 +1,35 @@
-# 互动学习记录
+# 第 2 章 · 构型空间｜Q&A
+
+[← 阅读首页](../../README.md) · [章节正文](ch02-configuration-space.md) · [学习进度](../../progress.md) · [来源索引](../../sources.md)
+
+<details>
+<summary><strong>Q&A 目录</strong></summary>
+
+- [Session 001 - 第 2 章，第 2.1 节：刚体的自由度](#session-001---第-2-章第-21-节刚体的自由度)
+- [Session 002 - 第 2 章，第 2.2 节：关节的自由度](#session-002---第-2-章第-22-节关节的自由度)
+- [Session 003 - 第 2 章，第 2.2 节：读图后再计数](#session-003---第-2-章第-22-节读图后再计数)
+- [Session 004 - 第 2 章，第 2.2 节：Grübler 公式与平面四杆机构](#session-004---第-2-章第-22-节grübler-公式与平面四杆机构)
+- [Session 005 - 第 2 章，第 2.2 节：滑块—曲柄先读图](#session-005---第-2-章第-22-节滑块曲柄先读图)
+- [Session 006 - 第 2 章，第 2.2 节：滑块—曲柄的两种建模](#session-006---第-2-章第-22-节滑块曲柄的两种建模)
+- [Session 007 - 第 2 章，第 2.2 节：开链与闭链的自由度](#session-007---第-2-章第-22-节开链与闭链的自由度)
+- [Session 008 - 第 2 章，第 2.2 节：例题 2.5 - 重叠关节（图 2.6）](#session-008---第-2-章第-22-节例题-25---重叠关节图-26)
+- [Session 009 - 第 2 章，第 2.2 节：例题 2.6 - 冗余约束与奇异构型（图 2.7）](#session-009---第-2-章第-22-节例题-26---冗余约束与奇异构型图-27)
+- [Session 010 - 第 2 章，第 2.2 节：例题 2.7 - Delta robot（图 2.8）](#session-010---第-2-章第-22-节例题-27---delta-robot图-28)
+- [Session 011 - 第 2 章，第 2.2 节：例题 2.8 - Stewart–Gough platform（图 1.1(b)）](#session-011---第-2-章第-22-节例题-28---stewartgough-platform图-11b)
+- [Session 012 - 第 2 章，第 2.3.1 节：构型空间的拓扑](#session-012---第-2-章第-231-节构型空间的拓扑)
+- [Session 013 - 第 2 章，第 2.3.2 节：构型空间的表示](#session-013---第-2-章第-232-节构型空间的表示)
+- [Session 014 - 第 2 章，第 2.4 节：构型与速度约束（configuration and velocity constraints）](#session-014---第-2-章第-24-节构型与速度约束configuration-and-velocity-constraints)
+- [Session 015 - 第 2 章，第 2.4.2 节：完整约束与 Pfaffian 速度约束](#session-015---第-2-章第-242-节完整约束与-pfaffian-速度约束)
+- [Session 016 - 第 2 章，第 2.4.3 节：非完整约束（nonholonomic constraint）](#session-016---第-2-章第-243-节非完整约束nonholonomic-constraint)
+- [Session 017 - 第 2 章，第 2.5 节：任务空间与工作空间（task space and workspace）](#session-017---第-2-章第-25-节任务空间与工作空间task-space-and-workspace)
+- [Session 018 - 第 2 章，第 2.5 节：SCARA 与喷涂机器人](#session-018---第-2-章第-25-节scara-与喷涂机器人)
+- [Session 019 - 第 2 章，第 2.6 节：总结](#session-019---第-2-章第-26-节总结)
+
+</details>
 
 本文件只保存教师侧的学习设计与参考答案，不记录学习者的原始回答。
 
-> **当前 QA 进度（以最新 Session 为准）**：第 2 章已于 Session 019 收束；无进行中项，下一步进入第 3 章。
+> 本章历史记录：第 2 章于 Session 019 收束。当前学习断点统一见 [学习进度](../../progress.md)。
 
 ## Session 001 - 第 2 章，第 2.1 节：刚体的自由度
 
@@ -460,3 +487,7 @@ $$
 **参考答案**：先用连杆、关节和约束计算机器人的自由度，也就是 C-space 的维数；再判断各关节变量组合形成的 C-space 拓扑及其表示方式；最后根据任务需求定义任务空间，并根据机器人结构求出末端实际可达的工作空间。C-space 描述整个机器人，任务空间和工作空间只描述末端相关部分。
 
 **下一步**：第 2 章学习记录收束；新会话从下一章开始。
+
+---
+
+[返回顶部](#第-2-章--构型空间qa) · [阅读首页](../../README.md) · [第 3 章 →](../ch03/ch03-rigid-body-motions-qa.md)

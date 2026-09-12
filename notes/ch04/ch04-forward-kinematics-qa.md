@@ -1,4 +1,24 @@
-# 第 4 章互动学习记录
+# 第 4 章 · 正向运动学｜Q&A
+
+[← 阅读首页](../../README.md) · [章节正文](ch04-forward-kinematics.md) · [学习进度](../../progress.md) · [来源索引](../../sources.md)
+
+<details>
+<summary><strong>Q&A 目录</strong></summary>
+
+- [Session 001 - 第 4 章导言至 4.1.1：空间形式 PoE](#session-001---第-4-章导言至-411空间形式-poe)
+- [Session 002 - 4.1.2 Example 4.1：3R 空间开链](#session-002---412-example-413r-空间开链)
+- [Session 003 - 4.1.2 Example 4.2：3R 平面链的 $SE(2)$ 简化](#session-003---412-example-423r-平面链的-se2-简化)
+- [Session 004 - 4.1.2 Example 4.3：6R 空间开链](#session-004---412-example-436r-空间开链)
+- [Session 005 - 4.1.2 Example 4.4：RRPRRR 空间开链](#session-005---412-example-44rrprrr-空间开链)
+- [Session 006 - 4.1.2 Example 4.5：UR5 数值 PoE](#session-006---412-example-45ur5-数值-poe)
+- [Session 007 - 4.1.3 物体形式 PoE](#session-007---413-物体形式-poe)
+- [Session 008 - Example 4.6：6R 空间链的物体轴](#session-008---example-466r-空间链的物体轴)
+- [Session 009 - Example 4.7：WAM 7R 冗余机械臂](#session-009---example-47wam-7r-冗余机械臂)
+- [Session 010 - 4.2 URDF：树结构、关节与连杆](#session-010---42-urdf树结构关节与连杆)
+- [Session 011 - 4.2 UR5 的实际 URDF](#session-011---42-ur5-的实际-urdf)
+- [Session 012 - 4.3 第 4 章统一总结](#session-012---43-第-4-章统一总结)
+
+</details>
 
 本文件只保存教师侧的学习设计、判定依据和参考答案，不记录学习者的原始回答。
 
@@ -1145,3 +1165,7 @@ $$
 ### 下一步
 
 反馈整题后进入 4.4 Software，学习 `FKinSpace` 与 `FKinBody` 的调用约定和实现逻辑。
+
+---
+
+[← 第 3 章](../ch03/ch03-rigid-body-motions-qa.md) · [返回顶部](#第-4-章--正向运动学qa) · [阅读首页](../../README.md)

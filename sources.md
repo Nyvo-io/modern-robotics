@@ -5,7 +5,9 @@
 - **书名**：*Modern Robotics: Mechanics, Planning, and Control*
 - **作者**：Kevin M. Lynch、Frank C. Park
 - **年份**：2017
-- **本地原件**：`/Users/nyvo/Document/Modern Robotics Mechanics, Planning, and Control (Kevin M. Lynch, Frank C. Park) (z-library.sk, 1lib.sk, z-lib.sk).pdf`
+- **学习版本**：2017 年 5 月 3 日预印本（扉页日期）；共 644 个 PDF 页面。
+- **教材文件**：[books/modern-robotics.pdf](books/modern-robotics.pdf)，相对于仓库根目录。
+- **作者主页**：[Modern Robotics](https://hades.mech.northwestern.edu/index.php/Modern_Robotics)。官网提供的版本可能与本仓库不同，现有引用以仓库 PDF 为准。
 
 ## 引用与图片规则
 
@@ -15,7 +17,7 @@
 
 ## 已建立的页码锚点
 
-- 第 2 章开始：书页 11；本地 PDF 第 34 页。
+- 第 2 章开始：书页 11；本地 PDF 第 30 页（已按本仓库 PDF 核对）。
 - Figure 2.4(a)（平面四杆）：书页 18；本地 PDF 第 37 页；局部截取文件为 `attachments/ch02/fig-2-4a-four-bar-linkage.png`。
 - Figure 2.6（重叠关节）：书页 20；本地 PDF 第 39 页；局部截取文件为 `attachments/ch02/fig-2-6-overlapping-joints.png`。
 - Figure 2.7（冗余约束与奇异构型）：书页 21；本地 PDF 第 40 页；局部截取文件为 `attachments/ch02/fig-2-7-redundant-constraints.png`。

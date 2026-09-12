@@ -1,6 +1,22 @@
 # Modern Robotics 第 4 章：正向运动学（Forward Kinematics）
 
-来源：本地教材 PDF；第 4 章从书页 137／本地 PDF 第 156 页开始。
+[← 阅读首页](../../README.md) · [配套 Q&A](ch04-forward-kinematics-qa.md) · [学习进度](../../progress.md) · [来源索引](../../sources.md)
+
+<details>
+<summary><strong>本章目录</strong></summary>
+
+- [本章路线图](#本章路线图)
+- [章导言：从 3R 平面开链到指数积](#章导言从-3r-平面开链到指数积)
+- [4.1 指数积公式（Product of Exponentials Formula）](#41-指数积公式product-of-exponentials-formula)
+  - [4.1.1 第一种形式：基座坐标系中的螺旋轴](#411-第一种形式基座坐标系中的螺旋轴)
+  - [4.1.2 例题（Examples）](#412-例题examples)
+  - [4.1.3 第二种形式：末端坐标系中的螺旋轴](#413-第二种形式末端坐标系中的螺旋轴)
+- [4.2 通用机器人描述格式（Universal Robot Description Format, URDF）](#42-通用机器人描述格式universal-robot-description-format-urdf)
+- [4.3 本章总结（Summary）（进行中）](#43-本章总结summary进行中)
+
+</details>
+
+来源：[教材 PDF](../../books/modern-robotics.pdf) · 2017 年 5 月预印本 · 书页 137 起／PDF 第 156 页起。
 
 ## 本章路线图
 
@@ -714,7 +730,7 @@ $$
 \bar S=(\omega_z,v_x,v_y).
 $$
 
-这里把刚体限制在 \(xy\) 平面内运动。平面刚体只有三个自由度：
+这里把刚体限制在 $xy$ 平面内运动。平面刚体只有三个自由度：
 
 $$\boxed{x\text{ 方向平移},\quad y\text{ 方向平移},\quad \text{绕 }z\text{ 轴旋转}}$$
 
@@ -2013,3 +2029,7 @@ $$
 因此，模型形式可以转换；真正不能混用的是各量所属的坐标系、乘法位置和因子顺序。
 
 至此，4.3 Summary 覆盖完成。下一单元进入 4.4 Software，学习 `FKinSpace` 与 `FKinBody` 的输入、输出和实现顺序。
+
+---
+
+[← 第 3 章](../ch03/ch03-rigid-body-motions.md) · [返回顶部](#modern-robotics-第-4-章正向运动学forward-kinematics) · [阅读首页](../../README.md)
